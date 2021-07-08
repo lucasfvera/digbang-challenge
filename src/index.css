@@ -1,3 +1,20 @@
+:root{
+  --spacing-unit: 8px;
+  --primary-color: #084F85;
+  --primary-color-dark: #003B67;
+  --primary-color-darkest: #00355D;
+  --secondary-color: #17AA8D;
+  --secondary-color-light: #3db39b;
+  --secondary-color-dark: #1b8d76;
+  --pure-white: #ffffff;
+  --action-btn-primary-color: var(--secondary-color);
+  --action-btn-primary-color-hover: var(--secondary-color-dark);
+  --action-btn-primary-color-clicked: var(--secondary-color-light);
+  --action-btn-secondary-color: #0A538B;
+  --action-btn-secondary-color-hover: #114b77;
+  --action-btn-secondary-color-clicked: #2c6d9e;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

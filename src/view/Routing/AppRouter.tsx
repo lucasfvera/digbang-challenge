@@ -9,7 +9,7 @@ import routes from './routes'
 const AppRouter = () => {
     return (
         <Switch>
-            {routes.map(route => <Route exact {...route}/>)}
+            {routes.map(route => <Route key={route.path} exact {...route}/>)}
             <Route exact path="/">
                 <Redirect to="/credit-simulator" />
             </Route>
