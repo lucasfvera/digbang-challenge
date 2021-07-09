@@ -9,7 +9,8 @@ export const CurrencySymbol = styled.span`
     font-weight: bold;
     font-size: 22px;
     position: absolute;
-    top: calc(var(--spacing-unit)/2);
+    top: 50%;
+    transform: translateY(-50%);
     left: calc(var(--spacing-unit));
 `
 
@@ -23,6 +24,7 @@ export const NumberStyledInput = styled.input`
     font-weight: bold;
     font-size: 22px;
     text-align: center;
+    min-width: 120px;
         /* Chrome, Safari, Edge, Opera */
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {

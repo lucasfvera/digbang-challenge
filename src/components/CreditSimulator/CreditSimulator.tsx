@@ -6,7 +6,6 @@ const CreditSimulator = () => {
     const [creditAmount, setCreaditAmount] = useState<number>(19500);
     const [creditTerm, setCreditTerm] = useState<number>(16);
     const handleCreditAmountChange = (e: number) => {
-        console.log(e)
         setCreaditAmount(e)
     }
     const primaryBtn = {
@@ -40,7 +39,7 @@ const CreditSimulator = () => {
 
     return (
         <FormCard 
-            header={LANG.simulateYourCredit.toUpperCase()} 
+            header={LANG.simulateYourCredit} 
             primaryButton={primaryBtn} 
             secondaryButton={secondaryBtn}
             sumary={sumary}
