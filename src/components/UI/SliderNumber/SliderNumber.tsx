@@ -32,8 +32,8 @@ const SliderNumber: React.FC<InheritedProps> = (props) => {
                     trackStyle={{backgroundColor: "white"}}
                 />
                 <SliderRangeLabelsContainer>
-                    <BodyStyled color="white" marginless>{props.minValue}</BodyStyled>
-                    <BodyStyled color="white" marginless>{props.maxValue}</BodyStyled>
+                     <BodyStyled color="white" marginless>{props.isCurrency && "$"} {props.minValue}</BodyStyled>
+                     <BodyStyled color="white" marginless>{props.isCurrency && "$"} {props.maxValue}</BodyStyled>
                 </SliderRangeLabelsContainer>
             </SliderContainer>
         </SliderWrapper>
